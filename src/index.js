@@ -1,4 +1,4 @@
-/* --- 1 --- */
+// --- 1 --- 
 const theCoders = (driver, navigator) => {
   console.log(
     `The awesome coders for today is the driver ${driver} and the navigator ${navigator}`
@@ -6,11 +6,11 @@ const theCoders = (driver, navigator) => {
 };
 theCoders("Jennie", "Alfons")
 
-/*
-2)
-Pass in only ONE name when you call the function and see what happens.
-(HINT, you should get undefined...)
+// --- 2 ---
+/* Note: I also fixed the script path in index.html from "src/index.js" to "index.js" because it was causing a GET error. :) 
 */
+
+// theCoders("Jennie") - "navigator undefined" 
 
 /*
 3) 
