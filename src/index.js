@@ -67,8 +67,5 @@ const calculationTest = (driverName, navigatorName) => {
 
 calculationTest("Jennie", "Alfons")
 
-/*
-6) **BONUS**
-Make the calculation machine we just made show random calculations everytime you invoke the function.
-But hey, maybe limit the randomness to be numbers between 0-10?
-*/
+// --- 6 BONUS --- 
+// I already implemented random numbers between 0-10 in step 5! 
