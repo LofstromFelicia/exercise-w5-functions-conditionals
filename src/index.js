@@ -41,16 +41,22 @@ const checkAge = () => {
 
 checkAge()
 
-const calculationTest = () => {
-  /*
-  5)
-  In this function we want to give the user a mathematical calculation to 
-  give us the answer to. Something like prompt('What is 5 + 6?')  
-  If the answer is correct, congratulate the user. 'Yay! Correct'
-  If not, give the user the correct answer so they can learn. 'Noooo, the answer is 11'
-  You choose if to use addition, subtraction, multiplication or division. 
-  */
+// --- 5 --- 
+const calculationTest = (driverName, navigatorName) => {
+  let num1 = Math.floor(Math.random() * 11)
+  let num2 = Math.floor(Math.random() * 11)
+  let correctAnswer = num1 + num2
+
+  let userAnswer = prompt(`What is ${num1} + ${num2}?`)
+
+  if (Number(userAnswer) === correctAnswer) {
+    alert(`Yay! Correct! 🥳`)
+  } else {
+    alert(`Nooo, the answer is ${correctAnswer}. Keep practicing! 🧠`)
+  }
 };
+
+calculationTest()
 
 /*
 6) **BONUS**
