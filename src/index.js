@@ -16,11 +16,9 @@ theCoders("Jennie", "Alfons")
 const compareNames = (driver, navigator) => {
   if (driver.length > navigator.length) {
     console.log("The driver has the longest name.")
-  }
-  else if (navigator.length > driver.length) {
+  } else if (navigator.length > driver.length) {
     console.log("The navigator has the longest name.")
-  }
-  else {
+  } else {
     console.log("The driver and the navigator has equally long names.")
   }
 }
@@ -28,23 +26,20 @@ const compareNames = (driver, navigator) => {
 compareNames("Jennie", "Alfons")
 // compareNames("Zlatan", "Bo") - driver has longer name
 
-/*
-3) 
-create a function that checks which name is the longest when comparing the coders 
-and print out: "The driver has the longest name." or "The navigator has the longest name" 
-or if the names ar the same length "The driver and the navigator has equally long names"
-*/
+// --- 4 --- 
+const checkAge = () => {
+  let userAge = prompt("How old are you?")
 
-/*
-4) 
-to get user input you can use the prompt() and then store that into a variable.
-Such as 
-let userAge = prompt('How old are you?')
-Create a function that prompts the user for its age, then depending on the age will alert back different messages such as 
-alert('wow you are 33! that's young!')
-or alert('23! Younger than Zlatan') or something like that.
-Add as many conditonals as you want.
-*/
+  if (userAge < 18) {
+    alert(`Wow, ${userAge}! You are just a kid!`)
+  } else if (userAge == 33) {
+    alert("33! That's a prime age!")
+  } else {
+    alert(`${userAge}! Younger than Zlatan (probably)!`)
+  }
+}
+
+checkAge()
 
 const calculationTest = () => {
   /*
