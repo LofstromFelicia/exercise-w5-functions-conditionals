@@ -4,7 +4,7 @@ This is a JavaScript project built as part of the Technigo Web Development progr
 It focuses on logic, functions, and user interaction through a playful "racing" theme.
 
 ## 🚀 Live Demo
-[Klistra in din GitHub Pages-länk här]
+Github link here [https://lofstromfelicia.github.io/exercise-w5-functions-conditionals/]
 
 ## 🌟 Features
 * **The Coders:** Introduction of the driver and navigator.
