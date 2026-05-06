@@ -47,16 +47,25 @@ const calculationTest = (driverName, navigatorName) => {
   let num2 = Math.floor(Math.random() * 11)
   let correctAnswer = num1 + num2
 
-  let userAnswer = prompt(`What is ${num1} + ${num2}?`)
+  let userAnswer = prompt(`Hi ${driverName}! To start your engine, prove you are awake. What is ${num1} + ${num2}?`)
 
   if (Number(userAnswer) === correctAnswer) {
-    alert(`Yay! Correct! 🥳`)
+    alert(`Yay! Correct! 🥳 Now let's check your age.`)
+
+    let age = prompt(`How old are you, ${driverName}?`)
+
+    if (Number(age) >= 18) {
+      alert(`Great! ${driverName}, you are old enough to drive ${navigatorName} to the destination! 🚗💨`)
+    } else {
+      alert(`Sorry ${driverName}, you and ${navigatorName} have to wait ${18 - age} more years for a driver's license. 🚌`)
+    }
+
   } else {
-    alert(`Nooo, the answer is ${correctAnswer}. Keep practicing! 🧠`)
+    alert(`Nooo, the answer is ${correctAnswer}. No driving for you today! 🧠`)
   }
 };
 
-calculationTest()
+calculationTest("Jennie", "Alfons")
 
 /*
 6) **BONUS**
