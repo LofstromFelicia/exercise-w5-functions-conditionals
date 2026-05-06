@@ -2,8 +2,8 @@
 const theCoders = (driver, navigator) => {
   console.log(
     `The awesome coders for today is the driver ${driver} and the navigator ${navigator}`
-  );
-};
+  )
+}
 theCoders("Jennie", "Alfons")
 
 // --- 2 ---
@@ -11,6 +11,22 @@ theCoders("Jennie", "Alfons")
 */
 
 // theCoders("Jennie") - "navigator undefined" 
+
+// --- 3 ---
+const compareNames = (driver, navigator) => {
+  if (driver.length > navigator.length) {
+    console.log("The driver has the longest name.")
+  }
+  else if (navigator.length > driver.length) {
+    console.log("The navigator has the longest name.")
+  }
+  else {
+    console.log("The driver and the navigator has equally long names.")
+  }
+}
+
+compareNames("Jennie", "Alfons")
+// compareNames("Zlatan", "Bo") - driver has longer name
 
 /*
 3) 
